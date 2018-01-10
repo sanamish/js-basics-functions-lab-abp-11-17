@@ -3,21 +3,21 @@ const expect = chai.expect;
 
 describe('index.js', function() {
   describe('distanceFromHqInBlocks()', function() {
-    it('returns a distance in blocks', function() {
+    if('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(43)).to.equal(1);
     });
 
-    it('returns a distance in blocks', function() {
+    if('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(50)).to.equal(8);
     });
 
-    it('calculates distances below 42nd street', function() {
+    if('calculates distances below 42nd street', function() {
       expect(distanceFromHqInBlocks(34)).to.equal(8);
     });
     });
 
   describe('distanceFromHqInFeet()', function() {
-    it('returns a distance in feet', function() {
+    if('returns a distance in feet', function() {
       expect(distanceFromHqInFeet(43)).to.equal(264);
     });
 
@@ -59,7 +59,7 @@ describe('index.js', function() {
     });
 
     it('does not allow rides over 2500 feet', function() {
-      expect(calculatesFarePrice(2500)).to.greaterthan('cannot travel that far');
+      expect(calculatesFarePrice(2500,3000)).to.equal('cannot travel that far');
     });
   });
 });
