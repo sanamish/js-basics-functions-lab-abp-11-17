@@ -3,8 +3,8 @@ function distanceFromHqInBlocks (distance) {
 }
 var distance = 300
 
-function calculatesFarePrice(distance){
-  if (distance <== 400){
+function calculatesFarePrice(start, destination){
+  if (calculate(400,0) <== 400){
     return '0'
   }
   else if (distance <400 && distance >2000){
