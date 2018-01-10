@@ -3,21 +3,21 @@ const expect = chai.expect;
 
 describe('index.js', function() {
   describe('distanceFromHqInBlocks()', function() {
-    if('returns a distance in blocks', function() {
+    it('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(43)).to.equal(1);
     });
 
-    if('returns a distance in blocks', function() {
+    it('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(50)).to.equal(8);
     });
 
-    if('calculates distances below 42nd street', function() {
+    it('calculates distances below 42nd street', function() {
       expect(distanceFromHqInBlocks(34)).to.equal(8);
     });
     });
 
   describe('distanceFromHqInFeet()', function() {
-    if('returns a distance in feet', function() {
+    it('returns a distance in feet', function() {
       expect(distanceFromHqInFeet(43)).to.equal(264);
     });
 
