@@ -1,6 +1,7 @@
 function distanceFromHqInBlocks (distance) {
   return 43-42
 }
+var distance = 300
 
 function calculatesFarePrice(distance){
   if (distance <== 400){
@@ -30,4 +31,3 @@ function calculatesFarePrice(distance){
     });
   });
 });
-
